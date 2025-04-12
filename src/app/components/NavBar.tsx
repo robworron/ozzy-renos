@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { Button } from "@mui/material";
 import { usePathname } from "next/navigation";
+import classNames from "classnames";
+import Image from "next/image";
 
 const NavBar = () => {
   const currentPath = usePathname();
@@ -13,6 +15,14 @@ const NavBar = () => {
     { label: "Gallery", path: "/gallery" },
     { label: "Contact", path: "/contact" },
   ];
+
+  const containerStyles = classNames(
+    "bg-[var(--white)] w-full h-20 flex justify-center"
+  );
+
+  const navbarStyles = classNames(
+    "w-full h-full max-w-[1200px] flex flex-row justify-around items-center"
+  );
 
   const navbarButtonStyles = (isActive: boolean) => ({
     position: "relative",
@@ -39,27 +49,42 @@ const NavBar = () => {
   });
 
   return (
-    <nav role="navigation" aria-label="Navigation">
-      {navPaths.map(({ label, path }) => (
-        <Link key={label} href={path} className="mx-2">
-          <Button
-            disableRipple
-            variant="text"
-            sx={navbarButtonStyles(currentPath === path)}
-          >
-            {label}
-          </Button>
-        </Link>
-      ))}
-      <Link href="/form" className="mx-2">
-        <Button
-          variant="contained"
-          sx={{ backgroundColor: "var(--red)", fontSize: "1.25rem" }}
-        >
-          Free Quote!
-        </Button>
-      </Link>
-    </nav>
+    <div className={containerStyles}>
+      <nav role="navigation" aria-label="Navigation" className={navbarStyles}>
+        <div className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="OzzyRenos"
+            width={140}
+            height={70}
+            className="mr-6"
+          />
+          {navPaths.map(({ label, path }) => (
+            <Link key={label} href={path} className="mx-2">
+              <Button
+                disableRipple
+                variant="text"
+                aria-current={currentPath === path ? "page" : undefined}
+                sx={navbarButtonStyles(currentPath === path)}
+              >
+                {label}
+              </Button>
+            </Link>
+          ))}
+        </div>
+        <div>
+          <Link href="/form" className="mx-2">
+            <Button
+              variant="contained"
+              aria-current="page" //need to update to ensure that this is properly styled
+              sx={{ backgroundColor: "var(--red)", fontSize: "1.25rem" }}
+            >
+              Free Quote!
+            </Button>
+          </Link>
+        </div>
+      </nav>
+    </div>
   );
 };
 
