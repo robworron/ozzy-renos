@@ -39,108 +39,95 @@ export default function Home() {
   );
 
   return (
-    <>
-      <NavBar />
-      <main className="w-full flex flex-col items-center">
-        <div className="relative w-full h-[80vh] flex justify-center">
-          <section className="w-full max-w-[1200px] m-8 flex flex-col justify-center">
-            <h1 className="text-7xl my-4">Ozzy Renos</h1>
-            <h2 className="text-3xl my-2">
-              Proudly Serving the Niagara Region
-            </h2>
-            <ul className="flex flex-col ml-4 text-2xl">
-              {servicesList.map((service) => (
-                <li key={service} className="flex mt-2">
-                  {wrenchIcon}
-                  <span className="w-2" />
-                  {service}
-                </li>
-              ))}
-            </ul>
-            <Button
-              variant="contained"
-              aria-current="page"
-              sx={{
-                backgroundColor: "var(--red)",
-                fontSize: "1.25rem",
-                width: "30%",
-                marginTop: "40px",
-              }}
-            >
-              Free Quote!
-            </Button>
-          </section>
+    <main className="w-full flex flex-col items-center">
+      <div className="relative w-full h-[80vh] flex justify-center">
+        <section className="w-full max-w-[1200px] m-8 flex flex-col justify-center">
+          <h1 className="text-7xl my-4">Ozzy Renos</h1>
+          <h2 className="text-3xl my-2">Proudly Serving the Niagara Region</h2>
+          <ul className="flex flex-col ml-4 text-2xl">
+            {servicesList.map((service) => (
+              <li key={service} className="flex mt-2">
+                {wrenchIcon}
+                <span className="w-2" />
+                {service}
+              </li>
+            ))}
+          </ul>
+          <Button
+            variant="contained"
+            aria-current="page"
+            sx={{
+              backgroundColor: "var(--red)",
+              fontSize: "1.25rem",
+              width: "30%",
+              marginTop: "40px",
+            }}
+          >
+            Free Quote!
+          </Button>
+        </section>
+        <Image
+          src="/gale-centre.jpg"
+          alt="Temp Picture"
+          fill
+          className="opacity-80 z-[-2]"
+          style={{ objectFit: "cover" }}
+          priority
+        />
+      </div>
+      <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
+      <section className="w-full flex justify-between items-center my-32">
+        <div className="w-[45%]">
           <Image
-            src="/gale-centre.jpg"
-            alt="Temp Picture"
-            fill
-            className="opacity-80 z-[-2]"
-            style={{ objectFit: "cover" }}
-            priority
+            src="/kitchen2.png"
+            alt="Kitchen"
+            width={1600}
+            height={1200}
+            className="object-cover w-full h-[70vh]"
           />
         </div>
-        <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
-        <section className="w-full flex justify-between items-center my-32">
-          <div className="w-[45%]">
-            <Image
-              src="/kitchen2.png"
-              alt="Kitchen"
-              width={1600}
-              height={1200}
-              className="object-cover w-full h-[70vh]"
-            />
-          </div>
-          <div className="w-[45%] h-[50vh] bg-[var(--red)] text-white flex flex-col justify-center p-10">
-            <h2 className="text-3xl pb-8">About Us</h2>
-            <p className="text-2xl">
-              Your trusted partner in exceptional construction and renovation
-              services in the vibrant Niagara Region. With a decade of
-              unwavering commitment to excellence, we take pride in our journey
-              as a premier general contractor. Our team is dedicated to
-              delivering the highest quality craftsmanship, ensuring every
-              project is a testament to our passion for building and renovating
-              spaces that stand the test of time.
-            </p>
-          </div>
-        </section>
+        <div className="w-[45%] h-[50vh] bg-[var(--red)] text-white flex flex-col justify-center p-10">
+          <h2 className="text-3xl pb-8">About Us</h2>
+          <p className="text-2xl">
+            Your trusted partner in exceptional construction and renovation
+            services in the vibrant Niagara Region. With a decade of unwavering
+            commitment to excellence, we take pride in our journey as a premier
+            general contractor. Our team is dedicated to delivering the highest
+            quality craftsmanship, ensuring every project is a testament to our
+            passion for building and renovating spaces that stand the test of
+            time.
+          </p>
+        </div>
+      </section>
 
-        {/** SERVICES CARDS */}
-        <section className="flex flex-wrap justify-center w-full max-w-[1200px] h-[80vh]">
-          <ServiceCard
-            cardTitle="Kitchens"
-            cardDescription="Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living.
-
-"
-            imagePath="/kitchen.png"
-          />
-          <ServiceCard
-            cardTitle="Bathrooms"
-            cardDescription="Refresh your bathroom with custom renovations that bring comfort, style, and a touch of luxury to your everyday routine."
-            imagePath="/bathroom.png"
-          />
-          <ServiceCard
-            cardTitle="Basements"
-            cardDescription="From family rooms to personal gyms, turn your basement into the extra space you’ve always wanted."
-            imagePath="/basement.png"
-          />
-          <ServiceCard
-            cardTitle="Flooring"
-            cardDescription="Bring your home to life with floors and trim that fit your style and tie every room together."
-            imagePath="/flooring.png"
-          />
-          <ServiceCard
-            cardTitle="Decks"
-            cardDescription="Enjoy the outdoors in comfort and style with a custom deck that fits your home and your lifestyle."
-            imagePath="/decks.png"
-          />
-          <ServiceCard
-            cardTitle="Fences"
-            cardDescription="Add safety, privacy, and a touch of style with fencing built to last and look great."
-            imagePath="/fences.png"
-          />
-        </section>
-      </main>
-      <Footer />
-    </>
+      {/** SERVICES CARDS */}
+      <section className="flex flex-wrap justify-center w-full max-w-[1200px] h-[80vh]">
+        <ServiceCard
+          cardTitle="Kitchens"
+          cardDescription="Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living."
+          imagePath="/kitchen.png"
+        />
+        <ServiceCard
+          cardTitle="Bathrooms"
+          cardDescription="Refresh your bathroom with custom renovations that bring comfort, style, and a touch of luxury to your everyday routine."
+          imagePath="/bathroom.png"
+        />
+        <ServiceCard
+          cardTitle="Basements"
+          cardDescription="From family rooms to personal gyms, turn your basement into the extra space you’ve always wanted."
+          imagePath="/basement.png"
+        />
+        <ServiceCard
+          cardTitle="Flooring"
+          cardDescription="Bring your home to life with floors and trim that fit your style and tie every room together."
+          imagePath="/flooring.png"
+        />
+        <ServiceCard
+          cardTitle="Decks & Fences"
+          cardDescription="Enjoy the outdoors in comfort and style with a custom deck that fits your home and your lifestyle."
+          imagePath="/decks.png"
+        />
+      </section>
+    </main>
   );
 }
