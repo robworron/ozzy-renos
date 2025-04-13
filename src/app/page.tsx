@@ -3,6 +3,7 @@ import Image from "next/image";
 import NavBar from "./components/NavBar";
 import { Button } from "@mui/material";
 import ServiceCard from "./components/ServiceCard";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const servicesList = [
@@ -139,6 +140,7 @@ export default function Home() {
           />
         </section>
       </main>
+      <Footer />
     </>
   );
 }
