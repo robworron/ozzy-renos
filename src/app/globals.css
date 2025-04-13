@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --white: #fafafa;
   --black: #101415;
   --red: #db1313;
 }
