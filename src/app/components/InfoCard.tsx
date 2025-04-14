@@ -13,7 +13,7 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
   const cardHeader = footer ? (
     <h2 className="text-3xl mb-4">Ozzy Renos</h2>
   ) : (
-    <h2 className="text-5xl text-black mb-2">Ozzy Renos</h2>
+    <h2 className="text-5xl text-black mb-4">Ozzy Renos</h2>
   );
 
   return (
@@ -80,7 +80,7 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
       ) : (
         <p className="text-xl py-4 font-bold">
           Serving the Niagara Region for all your construction and renovation
-          needs{" "}
+          needs.{" "}
         </p>
       )}
     </div>

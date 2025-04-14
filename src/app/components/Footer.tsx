@@ -2,7 +2,7 @@ import InfoCard from "./InfoCard";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[350px] flex flex-col justify-center items-center bg-[var(--black)] text-white py-4">
+    <div className="w-full h-[300px] flex flex-col justify-center items-center bg-[var(--black)] text-white py-4">
       <div className="flex flex-row">
         <InfoCard footer />
       </div>

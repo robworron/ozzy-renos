@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@mui/material";
 
 type ServiceCardProps = {
   cardTitle: string;
@@ -26,9 +27,18 @@ const ServiceCard = ({
             {cardTitle}
           </h2>
         </div>
-        <div className="absolute inset-0 bg-white text-black p-4 [transform:rotateY(180deg)] backface-hidden flex items-center justify-center text-center">
-          <div className="w-full h-full bg-[var(--red)] text-white flex flex-col justify-center p-4">
-            <p>{cardDescription}</p>
+        <div className="absolute inset-0 bg-white text-black [transform:rotateY(180deg)] backface-hidden flex items-center justify-center text-center">
+          <div className="w-full h-full bg-[var(--red)] text-white flex flex-col justify-between p-8">
+            <h6 className="text-lg">{cardDescription}</h6>
+            <Button
+              variant="outlined"
+              sx={{
+                color: "white",
+                borderColor: "white",
+              }}
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </div>
