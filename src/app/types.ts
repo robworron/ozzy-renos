@@ -12,7 +12,7 @@ export type Service = {
 export const services: Service[] = [
   {
     name: "Kitchens",
-    imagePath: "/kitchen2.png",
+    imagePath: "/kitchens/kitchen2-after.png",
     imageAlt: "kitchens",
     briefDescription: "Kitchens",
     description:
@@ -21,7 +21,7 @@ export const services: Service[] = [
   },
   {
     name: "Bathrooms",
-    imagePath: "/bathroom.png",
+    imagePath: "/bathrooms/bathroom6.png",
     imageAlt: "bathrooms",
     briefDescription: "Bathrooms",
     description:
@@ -29,7 +29,7 @@ export const services: Service[] = [
   },
   {
     name: "Basements",
-    imagePath: "/basement.png",
+    imagePath: "/basements/basement2.png",
     imageAlt: "basements",
     briefDescription: "Basements",
     description:
@@ -37,7 +37,7 @@ export const services: Service[] = [
   },
   {
     name: "Flooring",
-    imagePath: "/flooring.png",
+    imagePath: "/flooring/flooring1.png",
     imageAlt: "flooring",
     briefDescription: "Flooring",
     description:
@@ -45,7 +45,7 @@ export const services: Service[] = [
   },
   {
     name: "Decks & Fences",
-    imagePath: "/decks.png",
+    imagePath: "/decks/deck1.png",
     imageAlt: "decks",
     briefDescription: "Decks & Fences",
     description:

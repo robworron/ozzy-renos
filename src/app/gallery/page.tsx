@@ -5,7 +5,10 @@ const Gallery = () => {
   return (
     <main>
       <ImageCarousel
-        images={["/kitchen.png", "/kitchen2.png", "/kitchen3.png"]}
+        images={[
+          "/kitchens/kitchen1-before.png",
+          "/kitchens/kitchen1-after.png",
+        ]}
       />
     </main>
   );

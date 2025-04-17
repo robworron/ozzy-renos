@@ -70,7 +70,7 @@ export default function Home() {
           </Button>
         </section>
         <Image
-          src="/kitchen3.png"
+          src="/hero-image.png"
           alt="Ozzy Renos"
           fill
           className="opacity-80 z-[-2]"
@@ -82,7 +82,7 @@ export default function Home() {
       <section className="w-full flex justify-between items-center my-32">
         <div className="w-[45%] shadow-2xl">
           <Image
-            src="/kitchen2.png"
+            src="/kitchens/kitchen1-after.png"
             alt="Kitchen"
             width={1600}
             height={1200}
@@ -108,27 +108,27 @@ export default function Home() {
         <ServiceCard
           cardTitle="Kitchens"
           cardDescription="Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living."
-          imagePath="/kitchen.png"
+          imagePath="/kitchens/kitchen1-after.png"
         />
         <ServiceCard
           cardTitle="Bathrooms"
           cardDescription="Refresh your bathroom with custom renovations that bring comfort, style, and a touch of luxury to your everyday routine."
-          imagePath="/bathroom.png"
+          imagePath="/bathrooms/bathroom8.png"
         />
         <ServiceCard
           cardTitle="Basements"
           cardDescription="From family rooms to personal gyms, turn your basement into the extra space you’ve always wanted."
-          imagePath="/basement.png"
+          imagePath="/basements/basement2.png"
         />
         <ServiceCard
           cardTitle="Flooring"
           cardDescription="Bring your home to life with floors and trim that fit your style and tie every room together."
-          imagePath="/flooring.png"
+          imagePath="/flooring/flooring4.png"
         />
         <ServiceCard
           cardTitle="Decks & Fences"
           cardDescription="Enjoy the outdoors in comfort and style with a custom deck that fits your home and your lifestyle."
-          imagePath="/decks.png"
+          imagePath="/decks/decks1.png"
         />
       </section>
     </main>
