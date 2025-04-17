@@ -1,9 +1,8 @@
+import React from "react";
 import Image from "next/image";
 
-import NavBar from "./components/NavBar";
 import { Button } from "@mui/material";
 import ServiceCard from "./components/ServiceCard";
-import Footer from "./components/Footer";
 
 export default function Home() {
   const servicesList = [
@@ -61,14 +60,18 @@ export default function Home() {
               fontSize: "1.25rem",
               width: "30%",
               marginTop: "40px",
+              "&:hover": {
+                backgroundColor: "var(--black)",
+                borderColor: "var(--black)",
+              },
             }}
           >
             Free Quote!
           </Button>
         </section>
         <Image
-          src="/gale-centre.jpg"
-          alt="Temp Picture"
+          src="/kitchen3.png"
+          alt="Ozzy Renos"
           fill
           className="opacity-80 z-[-2]"
           style={{ objectFit: "cover" }}
@@ -77,7 +80,7 @@ export default function Home() {
       </div>
       <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
       <section className="w-full flex justify-between items-center my-32">
-        <div className="w-[45%]">
+        <div className="w-[45%] shadow-2xl">
           <Image
             src="/kitchen2.png"
             alt="Kitchen"
@@ -86,7 +89,7 @@ export default function Home() {
             className="object-cover w-full h-[70vh]"
           />
         </div>
-        <div className="w-[45%] h-[50vh] bg-[var(--red)] text-white flex flex-col justify-center p-10">
+        <div className="w-[45%] h-[50vh] bg-[var(--red)] text-white flex flex-col justify-center p-10 shadow-2xl">
           <h2 className="text-3xl pb-8">About Us</h2>
           <p className="text-2xl">
             Your trusted partner in exceptional construction and renovation

@@ -13,7 +13,7 @@ const ServiceCard = ({
   imagePath,
 }: ServiceCardProps) => {
   return (
-    <div className="w-[25%] h-[40%] m-[2%] [perspective:1000px]">
+    <div className="w-[25%] h-[40%] m-[2%] [perspective:1000px] ">
       <div className="relative w-full h-full transition-transform duration-1000 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
         <div className="absolute inset-0 [backface-visibility:hidden]">
           <Image
@@ -35,6 +35,10 @@ const ServiceCard = ({
               sx={{
                 color: "white",
                 borderColor: "white",
+                "&:hover": {
+                  backgroundColor: "var(--black)",
+                  borderColor: "var(--black)",
+                },
               }}
             >
               Learn More

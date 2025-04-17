@@ -21,3 +21,20 @@ h5,
 h6 {
   font-family: var(--font-montserrat);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--red) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--red) !important;
+}

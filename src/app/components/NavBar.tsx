@@ -73,11 +73,18 @@ const NavBar = () => {
           ))}
         </div>
         <div>
-          <Link href="/form" className="mx-2">
+          <Link href="/contact" className="mx-2">
             <Button
               variant="contained"
               aria-current="page"
-              sx={{ backgroundColor: "var(--red)", fontSize: "1.25rem" }}
+              sx={{
+                backgroundColor: "var(--red)",
+                fontSize: "1.25rem",
+                "&:hover": {
+                  backgroundColor: "var(--black)",
+                  borderColor: "var(--black)",
+                },
+              }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

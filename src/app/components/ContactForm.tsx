@@ -17,7 +17,13 @@ const ContactForm = () => {
         ></textarea>
         <Button
           variant="contained"
-          sx={{ backgroundColor: "var(--red)" }}
+          sx={{
+            backgroundColor: "var(--red)",
+            "&:hover": {
+              backgroundColor: "var(--black)",
+              borderColor: "var(--black)",
+            },
+          }}
           className="w-36"
         >
           Submit
