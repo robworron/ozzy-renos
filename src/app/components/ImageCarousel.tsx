@@ -7,7 +7,6 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/autoplay";
 
 type ImageCarouselProps = {
   images: string[];
@@ -16,22 +15,22 @@ type ImageCarouselProps = {
 const ImageCarousel = ({ images }: ImageCarouselProps) => {
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
+      modules={[Navigation, Pagination]}
       spaceBetween={20}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 5000, disableOnInteraction: false }}
       loop
-      className="w-[20%] h-[15%]"
+      className="w-full h-full"
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
           <Image
             src={image}
             alt={`Image ${index + 1}`}
-            width={500}
-            height={500}
+            width={10000}
+            height={10000}
+            className="object-cover w-full h-full shadow-2xl"
           />
         </SwiperSlide>
       ))}

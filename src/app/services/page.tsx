@@ -46,7 +46,7 @@ const Services = () => {
               isEven ? "flex-row" : "flex-row-reverse"
             }`}
           >
-            {imageHalf(service.imagePath, service.imageAlt)}
+            {imageHalf(service.mainImage, service.imageAlt)}
             {descriptionHalf(service.name, service.description, isEven)}
           </section>
         );
