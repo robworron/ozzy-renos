@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <form className="flex flex-col justify-center items-center w-[90%] h-[600px] m-4 text-lg text-black">
       <div className="flex flex-col gap-4 w-[80%] mx-auto">
-        <h2 className="text-2xl font-bold">Contact Us</h2>
+        <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
         <input type="text" placeholder="Name*" className={inputFieldStyles} />
         <input type="email" placeholder="Email*" className={inputFieldStyles} />
         <input type="tel" placeholder="Phone" className={inputFieldStyles} />

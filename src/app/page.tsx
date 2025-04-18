@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       {/** SERVICES CARDS */}
-      <section className="flex flex-wrap justify-center w-full max-w-[1200px] h-[80vh]">
+      <section className="flex flex-wrap justify-center w-full max-w-[1200px] gap-4 my-20">
         <ServiceCard
           cardTitle="Kitchens"
           cardDescription="Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living."
