@@ -79,6 +79,8 @@ export default function Home() {
         />
       </div>
       <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
+
+      {/** ABOUT US */}
       <section className="w-full flex justify-between items-center my-32">
         <div className="w-[45%] shadow-2xl">
           <Image
@@ -91,7 +93,7 @@ export default function Home() {
         </div>
         <div className="w-[45%] h-[50vh] bg-[var(--red)] text-white flex flex-col justify-center p-10 shadow-2xl">
           <h2 className="text-3xl pb-8">About Us</h2>
-          <p className="text-2xl">
+          <p className="text-lg">
             Your trusted partner in exceptional construction and renovation
             services in the vibrant Niagara Region. With a decade of unwavering
             commitment to excellence, we take pride in our journey as a premier
@@ -104,7 +106,7 @@ export default function Home() {
       </section>
 
       {/** SERVICES CARDS */}
-      <section className="flex flex-wrap justify-center w-full max-w-[1200px] gap-4 my-20">
+      <section className="flex flex-wrap justify-center items-center w-full max-w-[1200px] gap-2 my-4 mb-24 h-[500px]">
         <ServiceCard
           cardTitle="Kitchens"
           cardDescription="Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living."
@@ -122,13 +124,13 @@ export default function Home() {
         />
         <ServiceCard
           cardTitle="Flooring"
-          cardDescription="Bring your home to life with floors and trim that fit your style and tie every room together."
+          cardDescription="Bring your home to life with flooring and trim that reflect your style and create a seamless flow from room to room—adding warmth, character, and cohesion to your space."
           imagePath="/flooring/flooring4.png"
         />
         <ServiceCard
           cardTitle="Decks & Fences"
-          cardDescription="Enjoy the outdoors in comfort and style with a custom deck that fits your home and your lifestyle."
-          imagePath="/decks/decks1.png"
+          cardDescription="Enjoy the outdoors in comfort and style with a custom-built deck designed to suit your home, your lifestyle, and the way you love to unwind or entertain."
+          imagePath="/decks/deck1.png"
         />
       </section>
     </main>
