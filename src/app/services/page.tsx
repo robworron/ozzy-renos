@@ -37,6 +37,17 @@ const Services = () => {
 
   return (
     <main className="flex flex-col w-full items-center">
+      <section className="w-full my-10">
+        <div className="flex w-[50%] max-w-[700px] items-center">
+          <article
+            className={
+              "flex flex-col justify-between w-full h-[70%] max-h-[300px] p-16 text-white shadow-2xl bg-[var(--red)]"
+            }
+          >
+            <h2 className="text-end text-5xl">Services</h2>
+          </article>
+        </div>
+      </section>
       {services.map((service, index) => {
         const isEven = index % 2 === 0;
         return (

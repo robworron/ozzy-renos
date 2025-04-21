@@ -7,7 +7,7 @@ import Image from "next/image";
 const Gallery = () => {
   return (
     <main className="flex flex-col justify-center">
-      <section className="flex flex-col items-center w-full bg-[var(--black)] text-white p-10 mt-10">
+      <section className="flex flex-col items-center w-full bg-[var(--black)] text-white p-10 mt-10 shadow-2xl">
         <div className="flex w-full max-w-[1200px]">
           <h1 className="text-6xl max-w-[1200px]">Gallery</h1>
         </div>
