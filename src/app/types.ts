@@ -1,5 +1,17 @@
 export type ImagePair = [string, string];
 
+export type Page = {
+  title: string;
+  path: string;
+};
+
+export const pages: Page[] = [
+  { title: "Home", path: "/" },
+  { title: "Services", path: "/services" },
+  { title: "Gallery", path: "/gallery" },
+  { title: "Contact", path: "/contact" },
+]
+
 export type Service = {
   name: string;
   mainImage: string;
