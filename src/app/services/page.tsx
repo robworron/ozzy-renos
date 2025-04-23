@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-import { services } from "../types";
 import { Button } from "@mui/material";
+import { services } from "../types";
 
 const Services = () => {
   const imageHalf = (src: string, alt: string) => (
-    <aside className="w-[50%] flex flex-col items-center justify-center">
+    <aside className="flex flex-col justify-center items-center w-[50%] h-full">
       <Image
         src={src}
         alt={alt}
         width={4000}
         height={5000}
-        className="w-[60%] h-[100%] shadow-2xl"
+        className="w-[500px] h-[100%] shadow-2xl"
       />
     </aside>
   );
@@ -19,46 +19,37 @@ const Services = () => {
   const descriptionHalf = (
     title: string,
     description: string,
-    isRed: boolean
+    isBlack: boolean
   ) => (
-    <div className="flex w-[50%] items-center">
-      {isRed ? <span className="basis-1/6" /> : null}
-      <article
-        className={`flex flex-col basis-5/6  justify-between h-[70%] max-h-[300px] p-10 text-white shadow-2xl ${
-          isRed ? "bg-[var(--black)]" : "bg-[var(--red)]"
-        }`}
-      >
-        <h2 className="text-5xl">{title}</h2>
-        <p className="text-xl">{description}</p>
-      </article>
-      {isRed ? null : <span className="basis-1/6" />}
-    </div>
+    <article
+      className={`flex flex-col w-[40%] justify-between p-8 text-lg text-white shadow-2xl ${
+        isBlack ? "bg-[var(--black)]" : "bg-[var(--red)]"
+      }`}
+    >
+      <h2 className="pb-8 text-5xl">{title}</h2>
+      <p>{description}</p>
+    </article>
   );
 
   return (
-    <main className="flex flex-col w-full items-center">
+    <main className="flex flex-col justify-start min-h-[100vh]">
       <section className="w-full my-10">
-        <div className="flex w-[50%] max-w-[700px] items-center">
-          <article
-            className={
-              "flex flex-col justify-between w-full h-[70%] max-h-[300px] p-16 text-white shadow-2xl bg-[var(--red)]"
-            }
-          >
-            <h2 className="text-end text-5xl">Services</h2>
-          </article>
-        </div>
+        <h1 className="flex justify-end w-[50%] h-[70%] max-h-[300px] p-12 bg-[var(--red)] text-5xl text-white shadow-2xl">
+          Services
+        </h1>
       </section>
       {services.map((service, index) => {
-        const isEven = index % 2 === 0;
+        const isBlack = index % 2 === 0;
         return (
           <section
             key={index}
-            className={`flex w-full min-h-[50vh] h-[50vh] my-16 ${
-              isEven ? "flex-row" : "flex-row-reverse"
+            id={service.imageAlt}
+            className={`flex justify-between items-center w-full h-[500px] my-16 ${
+              isBlack ? "flex-row" : "flex-row-reverse"
             }`}
           >
             {imageHalf(service.mainImage, service.imageAlt)}
-            {descriptionHalf(service.name, service.description, isEven)}
+            {descriptionHalf(service.name, service.description, isBlack)}
           </section>
         );
       })}
@@ -70,6 +61,7 @@ const Services = () => {
           width: "15vw",
           height: "7.5vh",
           margin: "30px",
+          marginBottom: "100px",
           backgroundColor: "var(--red)",
           fontSize: "1.25rem",
           "&:hover": {
@@ -80,7 +72,6 @@ const Services = () => {
       >
         Book Now
       </Button>
-      <span className="mb-[6vh]" />
     </main>
   );
 };

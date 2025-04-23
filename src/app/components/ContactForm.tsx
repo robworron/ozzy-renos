@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@mui/material";
 import { useForm, ValidationError } from "@formspree/react";
+import { Button } from "@mui/material";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mdkgnpgb");
@@ -14,16 +14,15 @@ const ContactForm = () => {
     );
   }
 
-  const inputFieldStyles = "border border-gray-300 p-2 rounded-md";
+  const inputFieldStyles = "p-2 border border-gray-300 rounded-md";
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col justify-center items-center w-[90%] h-[600px] m-4 text-lg text-black"
+      className="flex flex-col items-center justify-center w-full h-full text-lg text-black"
     >
-      <div className="flex flex-col gap-4 w-[80%] mx-auto">
-        <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-
+      <div className="flex flex-col w-[80%] mx-auto gap-4">
+        <h1 className="mb-4 text-4xl font-bold">Contact Us</h1>
         <input
           type="text"
           name="name"
@@ -32,7 +31,6 @@ const ContactForm = () => {
           required
         />
         <ValidationError prefix="Name" field="name" errors={state.errors} />
-
         <input
           type="email"
           name="email"
@@ -41,14 +39,12 @@ const ContactForm = () => {
           required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-
         <input
           type="tel"
           name="phone"
           placeholder="Phone"
           className={inputFieldStyles}
         />
-
         <textarea
           placeholder="Message *"
           name="message"
@@ -60,7 +56,6 @@ const ContactForm = () => {
           field="message"
           errors={state.errors}
         />
-
         <Button
           variant="contained"
           sx={{

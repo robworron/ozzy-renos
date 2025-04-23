@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "@mui/material";
-import { usePathname } from "next/navigation";
 import classNames from "classnames";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const currentPath = usePathname();
@@ -17,11 +17,11 @@ const NavBar = () => {
   ];
 
   const containerStyles = classNames(
-    "sticky top-0 z-50 bg-white w-full h-20 flex justify-center border-b-2 border-gray-300 shadow-md"
+    "sticky top-0 z-50 flex justify-center w-full h-20 bg-white border-b-2 border-gray-300 shadow-md"
   );
 
   const navbarStyles = classNames(
-    "w-full h-full max-w-[1200px] flex flex-row justify-between items-center"
+    "flex flex-row justify-between items-center w-full h-full max-w-[1200px]"
   );
 
   const navbarButtonStyles = (isActive: boolean) => ({

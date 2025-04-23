@@ -1,6 +1,5 @@
-import React from "react";
 import Image from "next/image";
-
+import { services } from "./types";
 import { Button } from "@mui/material";
 import ServiceCard from "./components/ServiceCard";
 
@@ -22,7 +21,7 @@ export default function Home() {
       viewBox="0 0 24 24"
       strokeWidth={1}
       stroke="currentColor"
-      style={{ width: 24 }}
+      style={{ width: 24, padding: 2 }}
     >
       <path
         strokeLinecap="round"
@@ -38,14 +37,14 @@ export default function Home() {
   );
 
   return (
-    <main className="w-full flex flex-col items-center">
-      <div className="relative w-full h-[80vh] flex justify-center">
-        <section className="w-full max-w-[1200px] m-8 flex flex-col justify-center">
-          <h1 className="text-7xl my-4">Ozzy Renos</h1>
-          <h2 className="text-3xl my-2">Proudly Serving the Niagara Region</h2>
+    <main className="flex flex-col justify-start min-h-[100vh]">
+      <section className="relative flex justify-center w-full h-[80vh]">
+        <article className="flex flex-col justify-center w-full max-w-[1200px]">
+          <h1 className="my-2 text-7xl">Ozzy Renos</h1>
+          <h2 className="my-4 text-3xl">Proudly Serving the Niagara Region</h2>
           <ul className="flex flex-col ml-4 text-2xl">
             {servicesList.map((service) => (
-              <li key={service} className="flex mt-2">
+              <li key={service} className="flex my-1">
                 {wrenchIcon}
                 <span className="w-2" />
                 {service}
@@ -68,32 +67,30 @@ export default function Home() {
           >
             Free Quote!
           </Button>
-        </section>
+        </article>
         <Image
           src="/hero-image.png"
           alt="Ozzy Renos"
           fill
-          className="opacity-80 z-[-2]"
+          className="z-[-2] opacity-80"
           style={{ objectFit: "cover" }}
           priority
         />
-      </div>
+      </section>
       <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
 
       {/** ABOUT US */}
-      <section className="w-full flex justify-between items-center my-32">
-        <div className="w-[45%] shadow-2xl">
-          <Image
-            src="/kitchens/kitchen1-after.png"
-            alt="Kitchen"
-            width={1600}
-            height={1200}
-            className="object-cover w-full h-[70vh]"
-          />
-        </div>
-        <div className="w-[45%] h-[50vh] bg-[var(--red)] text-white flex flex-col justify-center p-10 shadow-2xl">
-          <h2 className="text-3xl pb-8">About Us</h2>
-          <p className="text-lg">
+      <section className="flex items-center justify-between w-full my-32">
+        <Image
+          src="/kitchens/kitchen1-after.png"
+          alt="Kitchen"
+          width={1600}
+          height={1200}
+          className="object-cover w-[45%] shadow-2xl h-[600px]"
+        />
+        <article className="flex flex-col justify-center w-[45%] h-[350px] p-10 bg-[var(--red)] text-lg text-white shadow-2xl">
+          <h2 className="pb-8 text-3xl">About Us</h2>
+          <p>
             Your trusted partner in exceptional construction and renovation
             services in the vibrant Niagara Region. With a decade of unwavering
             commitment to excellence, we take pride in our journey as a premier
@@ -102,36 +99,22 @@ export default function Home() {
             passion for building and renovating spaces that stand the test of
             time.
           </p>
-        </div>
+        </article>
       </section>
 
       {/** SERVICES CARDS */}
-      <section className="flex flex-wrap justify-center items-center w-full max-w-[1200px] gap-2 my-4 mb-24 h-[500px]">
-        <ServiceCard
-          cardTitle="Kitchens"
-          cardDescription="Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living."
-          imagePath="/kitchens/kitchen1-after.png"
-        />
-        <ServiceCard
-          cardTitle="Bathrooms"
-          cardDescription="Refresh your bathroom with custom renovations that bring comfort, style, and a touch of luxury to your everyday routine."
-          imagePath="/bathrooms/bathroom8.png"
-        />
-        <ServiceCard
-          cardTitle="Basements"
-          cardDescription="From family rooms to personal gyms, turn your basement into the extra space you’ve always wanted."
-          imagePath="/basements/basement2.png"
-        />
-        <ServiceCard
-          cardTitle="Flooring"
-          cardDescription="Bring your home to life with flooring and trim that reflect your style and create a seamless flow from room to room—adding warmth, character, and cohesion to your space."
-          imagePath="/flooring/flooring4.png"
-        />
-        <ServiceCard
-          cardTitle="Decks & Fences"
-          cardDescription="Enjoy the outdoors in comfort and style with a custom-built deck designed to suit your home, your lifestyle, and the way you love to unwind or entertain."
-          imagePath="/decks/deck1.png"
-        />
+      <section className="flex flex-wrap justify-center items-center gap-2 w-full h-[500px] max-w-[1200px] my-8 mb-24">
+        {services.map((service, index) => {
+          return (
+            <ServiceCard
+              key={index}
+              cardTitle={service.name}
+              serviceCardDescription={service.briefDescription}
+              imagePath={service.mainImage}
+              imageAlt={service.imageAlt}
+            />
+          );
+        })}
       </section>
     </main>
   );

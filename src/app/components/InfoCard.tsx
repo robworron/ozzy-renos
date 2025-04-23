@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-
 type InfoCardProps = {
   footer?: boolean;
 };
@@ -11,9 +9,9 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
   const strokeWidth = footer ? 1 : 1.5;
   const icon = footer ? "w-6 m-2" : "w-8 m-4";
   const cardHeader = footer ? (
-    <h2 className="text-3xl mb-4">Ozzy Renos</h2>
+    <h2 className="mb-4 text-3xl">Ozzy Renos</h2>
   ) : (
-    <h2 className="text-5xl text-black mb-4">Ozzy Renos</h2>
+    <h1 className="mb-4 text-5xl text-black">Ozzy Renos</h1>
   );
 
   return (
@@ -78,7 +76,7 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
       {footer ? (
         <></>
       ) : (
-        <p className="text-xl py-4 font-bold">
+        <p className="py-4 text-xl font-bold">
           Serving the Niagara Region for all your construction and renovation
           needs.{" "}
         </p>

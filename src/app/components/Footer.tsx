@@ -2,7 +2,7 @@ import InfoCard from "./InfoCard";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[280px] flex flex-col justify-center items-center bg-[var(--black)] text-white py-4">
+    <div className="flex flex-col justify-center items-center w-full h-[280px] py-4 bg-[var(--black)] text-white">
       <div className="flex flex-row justify-around w-full max-w-[1200px] px-4">
         <InfoCard footer />
         <iframe
@@ -11,7 +11,7 @@ const Footer = () => {
           className="w-[40%] h-full max-w-[400px] max-h-[250px] rounded-lg"
         ></iframe>
       </div>
-      <p className="text-center mt-10 text-gray-400">
+      <p className="mt-10 text-center text-gray-400">
         &copy; {new Date().getFullYear()} OzzyRenos. All rights reserved.
       </p>
     </div>
