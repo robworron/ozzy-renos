@@ -1,16 +1,20 @@
+import { ReactNode } from "react";
+import { Icons } from "./icons";
+
 export type ImagePair = [string, string];
 
 export type Page = {
   title: string;
   path: string;
+  svg: ReactNode;
 };
 
 export const pages: Page[] = [
-  { title: "Home", path: "/" },
-  { title: "Services", path: "/services" },
-  { title: "Gallery", path: "/gallery" },
-  { title: "Contact", path: "/contact" },
-]
+  { title: "Home", path: "/", svg: Icons.HomeIcon },
+  { title: "Services", path: "/services", svg: Icons.ServicesIcon },
+  { title: "Gallery", path: "/gallery", svg: Icons.GalleryIcon },
+  { title: "Contact", path: "/contact", svg: Icons.MailIcon },
+];
 
 export type Service = {
   name: string;

@@ -1,7 +1,6 @@
 "use client";
 
 import { useForm, ValidationError } from "@formspree/react";
-import { Button } from "@mui/material";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mdkgnpgb");
@@ -56,21 +55,13 @@ const ContactForm = () => {
           field="message"
           errors={state.errors}
         />
-        <Button
-          variant="contained"
-          sx={{
-            backgroundColor: "var(--red)",
-            "&:hover": {
-              backgroundColor: "var(--black)",
-              borderColor: "var(--black)",
-            },
-          }}
+        <button
+          className="w-[30%] px-4 py-2 bg-[var(--red)] text-white text-sm rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
           type="submit"
           disabled={state.submitting}
-          className="w-36"
         >
-          Submit
-        </Button>
+          <p>SUBMIT</p>
+        </button>
       </div>
     </form>
   );

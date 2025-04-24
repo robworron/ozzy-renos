@@ -1,4 +1,4 @@
-"use client"; // add this if you're using Next.js App Router
+"use client";
 
 import Image from "next/image";
 import "swiper/css";

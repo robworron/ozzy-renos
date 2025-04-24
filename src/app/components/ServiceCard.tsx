@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,20 +30,12 @@ const ServiceCard = ({
         {serviceCardDescription}
       </p>
       <div className="hidden relative z-[2] content-center items-center w-[80%] mt-4 text-lg text-center group-hover:block">
-        <Link key={imageAlt} href={`/services/#${imageAlt}`}>
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "var(--red)",
-              fontSize: "1.25rem",
-              "&:hover": {
-                backgroundColor: "var(--black)",
-                borderColor: "var(--black)",
-              },
-            }}
-          >
-            See More
-          </Button>
+        <Link
+          key={imageAlt}
+          href={`/services/#${imageAlt}`}
+          className="px-4 py-2 bg-[var(--red)] text-white text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
+        >
+          SEE MORE
         </Link>
       </div>
     </div>

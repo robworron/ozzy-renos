@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { services } from "./types";
-import { Button } from "@mui/material";
 import ServiceCard from "./components/ServiceCard";
 
 export default function Home() {
@@ -51,22 +50,9 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <Button
-            variant="contained"
-            aria-current="page"
-            sx={{
-              backgroundColor: "var(--red)",
-              fontSize: "1.25rem",
-              width: "30%",
-              marginTop: "40px",
-              "&:hover": {
-                backgroundColor: "var(--black)",
-                borderColor: "var(--black)",
-              },
-            }}
-          >
-            Free Quote!
-          </Button>
+          <button className="w-[30%] mt-8 px-4 py-2 bg-[var(--red)] text-white text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]">
+            <p>FREE QUOTE!</p>
+          </button>
         </article>
         <Image
           src="/hero-image.png"
