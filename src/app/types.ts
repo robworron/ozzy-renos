@@ -36,9 +36,9 @@ export const services: Service[] = [
     description:
       "We create stunning, functional kitchens tailored to your lifestyle. Whether you're dreaming of a modern chef’s paradise or a cozy family hub, our team delivers custom layouts, premium finishes, and flawless craftsmanship. From concept to completion, we make your kitchen the true heart of your home.",
     imagePairs: [
-      ["/kitchens/kitchen1-before.png", "/kitchens/kitchen1-after.png"],
-      ["/kitchens/kitchen2-before.png", "/kitchens/kitchen2-after.png"],
-      ["/kitchens/kitchen3-before.png", "/kitchens/kitchen3-after.png"],
+      ["/kitchens/kitchen1-after.png", "/kitchens/kitchen1-before.png"],
+      ["/kitchens/kitchen2-after.png", "/kitchens/kitchen2-before.png"],
+      ["/kitchens/kitchen3-after.png", "/kitchens/kitchen3-before.png"],
     ],
     images: ["/kitchens/kitchen4.png"],
   },
@@ -51,8 +51,8 @@ export const services: Service[] = [
     description:
       "We specialize in transforming bathrooms into relaxing, functional retreats. Whether it's a sleek ensuite, a spa-inspired upgrade, or a full remodel, our team delivers thoughtful design, quality materials, and expert craftsmanship. Let us bring your vision to life—style, comfort, and durability in every detail.",
     imagePairs: [
-      ["/bathrooms/bathroom1-before.png", "/bathrooms/bathroom1-after.png"],
-      ["/bathrooms/bathroom2-before.png", "/bathrooms/bathroom2-after.png"],
+      ["/bathrooms/bathroom1-after.png", "/bathrooms/bathroom1-before.png"],
+      ["/bathrooms/bathroom2-after.png", "/bathrooms/bathroom2-before.png"],
     ],
     images: [
       "/bathrooms/bathroom3.png",
@@ -71,7 +71,7 @@ export const services: Service[] = [
     description:
       "Unlock the full potential of your home with a beautifully finished basement. Whether you're creating a cozy family room, home office, gym, or income suite, we deliver smart designs and quality construction tailored to your goals. From framing to final touches, our team ensures your basement is functional, stylish, and built to last.",
     imagePairs: [
-      ["/basements/basement1-before.png", "/basements/basement1-after.png"],
+      ["/basements/basement1-after.png", "/basements/basement1-before.png"],
     ],
     images: ["/basements/basement2.png"],
   },

@@ -18,12 +18,12 @@ const Header = () => {
         <div className="flex items-center w-full h-full max-w-[1200px]">
           <button
             onClick={toggleMenu}
-            className="flex flex-col justify-between w-[32px] h-[20px] m-4 bg-transparent border-0 focus:outline-none lg:hidden"
+            className="flex flex-col justify-between w-[24px] h-[16px] m-4 bg-transparent border-0 focus:outline-none lg:hidden"
             aria-label="Toggle menu"
           >
             <span
               className={`block h-0.5 w-full bg-black rounded-sm transition-transform duration-300 ease-in-out ${
-                menuActive ? "translate-y-[9px] rotate-45" : ""
+                menuActive ? "translate-y-[7px] rotate-45" : ""
               }`}
             />
             <span
@@ -33,7 +33,7 @@ const Header = () => {
             />
             <span
               className={`block h-0.5 w-full bg-black rounded-sm transition-transform duration-300 ease-in-out ${
-                menuActive ? "-translate-y-[9px] -rotate-45" : ""
+                menuActive ? "-translate-y-[7px] -rotate-45" : ""
               }`}
             />
           </button>

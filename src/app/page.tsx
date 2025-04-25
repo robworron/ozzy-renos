@@ -7,7 +7,7 @@ export default function Home() {
     "Kitchens",
     "Bathrooms",
     "Basements",
-    "Flooring",
+    "Flooring & Trim",
     "Decks",
     "Fences",
     "Carpentry",
@@ -38,10 +38,12 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-start min-h-[100vh]">
       <section className="relative flex justify-center w-full h-[80vh]">
-        <article className="flex flex-col justify-center w-full max-w-[1200px]">
-          <h1 className="my-2 text-7xl">Ozzy Renos</h1>
-          <h2 className="my-4 text-3xl">Proudly Serving the Niagara Region</h2>
-          <ul className="flex flex-col ml-4 text-2xl">
+        <article className="flex flex-col justify-center w-full max-w-[1200px] ml-4">
+          <h1 className="my-2 text-4xl lg:text-7xl">Ozzy Renos</h1>
+          <h2 className="my-4 text-xl lg:text-3xl">
+            Proudly Serving the Niagara Region
+          </h2>
+          <ul className="flex flex-col ml-4 text-lg lg:text-2xl">
             {servicesList.map((service) => (
               <li key={service} className="flex my-1">
                 {wrenchIcon}
@@ -50,7 +52,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <button className="w-[30%] mt-8 px-4 py-2 bg-[var(--red)] text-white text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]">
+          <button className="w-[60%] md:w-[30%] mt-8 px-4 py-2 bg-[var(--red)] text-white text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]">
             <p>FREE QUOTE!</p>
           </button>
         </article>
@@ -66,16 +68,9 @@ export default function Home() {
       <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
 
       {/** ABOUT US */}
-      <section className="flex items-center justify-between w-full my-32">
-        <Image
-          src="/kitchens/kitchen1-after.png"
-          alt="Kitchen"
-          width={1600}
-          height={1200}
-          className="object-cover w-[45%] shadow-2xl h-[600px]"
-        />
-        <article className="flex flex-col justify-center w-[45%] h-[350px] p-10 bg-[var(--red)] text-lg text-white shadow-2xl">
-          <h2 className="pb-8 text-3xl">About Us</h2>
+      <section className="flex flex-col items-center justify-between w-full my-20 md:my-32 md:flex-row-reverse">
+        <article className="flex flex-col justify-center w-full md:w-[45%] h-[350px] p-10 bg-[var(--red)] text-sm lg:text-lg text-white shadow-2xl">
+          <h2 className="pb-8 text-2xl lg:text-3xl">About Us</h2>
           <p>
             Your trusted partner in exceptional construction and renovation
             services in the vibrant Niagara Region. With a decade of unwavering
@@ -86,10 +81,17 @@ export default function Home() {
             time.
           </p>
         </article>
+        <Image
+          src="/kitchens/kitchen1-after.png"
+          alt="Kitchen"
+          width={1600}
+          height={1200}
+          className="object-cover w-full md:w-[45%] shadow-2xl h-[600px]"
+        />
       </section>
 
       {/** SERVICES CARDS */}
-      <section className="flex flex-wrap justify-center items-center gap-2 w-full h-[500px] max-w-[1200px] my-8 mb-24">
+      <section className="flex flex-wrap justify-center items-center md:gap-2 w-full max-w-[1200px] md:h-[500px]">
         {services.map((service, index) => {
           return (
             <ServiceCard
