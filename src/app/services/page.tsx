@@ -3,7 +3,7 @@ import { services } from "../types";
 
 const Services = () => {
   const imageHalf = (src: string, alt: string) => (
-    <aside className="flex flex-col justify-center items-center w-[50%] h-full">
+    <aside className="flex flex-col justify-center items-center w-full md:w-[50%] md:h-full">
       <Image
         src={src}
         alt={alt}
@@ -20,11 +20,11 @@ const Services = () => {
     isBlack: boolean
   ) => (
     <article
-      className={`flex flex-col w-[40%] justify-between p-8 text-lg text-white shadow-2xl ${
+      className={`flex flex-col w-full md:w-[40%] justify-between p-8 text-sm md:text-base lg:text-lg text-white shadow-2xl ${
         isBlack ? "bg-[var(--black)]" : "bg-[var(--red)]"
       }`}
     >
-      <h2 className="pb-8 text-5xl">{title}</h2>
+      <h2 className="pb-8 text-2xl md:text-3xl lg:text-5xl">{title}</h2>
       <p>{description}</p>
     </article>
   );
@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <main className="flex flex-col justify-start min-h-[100vh]">
       <section className="w-full my-10">
-        <h1 className="flex justify-end w-[50%] h-[70%] max-h-[300px] p-12 bg-[var(--red)] text-5xl text-white shadow-2xl">
+        <h1 className="flex justify-center md:justify-end w-full md:w-[50%] h-[70%] max-h-[300px] p-8 lg:p-12 bg-[var(--red)] text-3xl md:text-4xl lg:text-5xl text-white shadow-2xl">
           Services
         </h1>
       </section>
@@ -42,8 +42,8 @@ const Services = () => {
           <section
             key={index}
             id={service.imageAlt}
-            className={`flex justify-between items-center w-full h-[500px] my-16 ${
-              isBlack ? "flex-row" : "flex-row-reverse"
+            className={`flex flex-col md:flex-row justify-between items-center w-full md:h-[500px] my-16 ${
+              isBlack ? "flex-row" : "md:flex-row-reverse"
             }`}
           >
             {imageHalf(service.mainImage, service.imageAlt)}

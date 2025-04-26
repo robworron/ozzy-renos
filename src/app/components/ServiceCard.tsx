@@ -33,7 +33,7 @@ const ServiceCard = ({
         <Link
           key={imageAlt}
           href={`/services/#${imageAlt}`}
-          className="px-4 py-2 bg-[var(--red)] text-white text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
+          className="px-4 py-2 bg-[var(--red)] text-white text-base md:text-lg lg:text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
         >
           SEE MORE
         </Link>

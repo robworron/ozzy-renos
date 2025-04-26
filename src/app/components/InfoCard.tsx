@@ -3,28 +3,33 @@ type InfoCardProps = {
 };
 
 const InfoCard = ({ footer = false }: InfoCardProps) => {
-  const infoCardTypeStyle = footer
-    ? "text-base text-gray-400"
-    : "flex flex-col justify-between w-[400px] h-[350px] m-4 text-lg text-black";
-  const strokeWidth = footer ? 1 : 1.5;
-  const icon = footer ? "w-6 m-2" : "w-8 m-4";
-  const cardHeader = footer ? (
-    <h2 className="mb-4 text-3xl">Ozzy Renos</h2>
-  ) : (
-    <h1 className="mb-4 text-5xl text-black">Ozzy Renos</h1>
-  );
+  const infoLineStyles = "flex flex-row items-center gap-2";
+  const stroke = footer ? "white" : "var(--red)";
+  const size = footer ? "size-4 lg:size-6" : "size-6 lg:size-8";
 
   return (
-    <div className={`${infoCardTypeStyle}`}>
-      {cardHeader}
-      <div className="flex flex-row items-center">
+    <div
+      className={
+        footer
+          ? "flex flex-col gap-2 mx-auto md:mx-0 text-sm"
+          : "flex flex-col justify-between w-[90%] h-[350px] p-4 md:p-6 text-base md:text-lg text-black"
+      }
+    >
+      {footer ? (
+        <h2 className="text-xl">Ozzy Renos</h2>
+      ) : (
+        <h1 className="mb-4 text-xl text-black md:text-3xl lg:text-5xl">
+          Ozzy Renos
+        </h1>
+      )}
+      <div className={infoLineStyles}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={strokeWidth}
-          stroke="currentColor"
-          className={icon}
+          strokeWidth={1.5}
+          stroke={stroke}
+          className={size}
         >
           <path
             strokeLinecap="round"
@@ -39,14 +44,14 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
           <p className={footer ? "pl-2" : ""}>9:00am - 6:00pm</p>
         </div>
       </div>
-      <div className="flex flex-row items-center">
+      <div className={infoLineStyles}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={strokeWidth}
-          stroke="currentColor"
-          className={icon}
+          strokeWidth={1.5}
+          stroke={stroke}
+          className={size}
         >
           <path
             strokeLinecap="round"
@@ -56,14 +61,14 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
         </svg>
         <p>(905) 123-4567</p>
       </div>
-      <div className="flex flex-row items-center">
+      <div className={infoLineStyles}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={strokeWidth}
-          stroke="currentColor"
-          className={icon}
+          strokeWidth={1.5}
+          stroke={stroke}
+          className={size}
         >
           <path
             strokeLinecap="round"
@@ -76,7 +81,7 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
       {footer ? (
         <></>
       ) : (
-        <p className="py-4 text-xl font-bold">
+        <p className="py-4 text-sm font-bold">
           Serving the Niagara Region for all your construction and renovation
           needs.{" "}
         </p>

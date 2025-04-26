@@ -18,10 +18,10 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col items-center justify-center w-full h-full text-lg text-black"
+      className="flex flex-col items-center justify-center w-full h-[600px] text-base md:text-lg text-black"
     >
-      <div className="flex flex-col w-[80%] mx-auto gap-4">
-        <h1 className="mb-4 text-4xl font-bold">Contact Us</h1>
+      <div className="flex flex-col w-[80%] gap-4">
+        <h1 className="mb-4 text-2xl font-bold md:text-4xl">Contact Us</h1>
         <input
           type="text"
           name="name"
@@ -56,7 +56,7 @@ const ContactForm = () => {
           errors={state.errors}
         />
         <button
-          className="w-[30%] px-4 py-2 bg-[var(--red)] text-white text-sm rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
+          className="w-full md:w-[30%] px-4 py-2 bg-[var(--red)] text-white text-sm rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
           type="submit"
           disabled={state.submitting}
         >
