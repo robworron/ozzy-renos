@@ -12,7 +12,7 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
       className={
         footer
           ? "flex flex-col gap-2 mx-auto md:mx-0 text-sm"
-          : "flex flex-col justify-between w-[90%] h-[350px] p-4 md:p-6 text-base md:text-lg text-black"
+          : "flex flex-col justify-between w-[90%] h-[350px] p-4 text-base md:text-lg text-black"
       }
     >
       {footer ? (
@@ -81,9 +81,9 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
       {footer ? (
         <></>
       ) : (
-        <p className="py-4 text-sm font-bold">
+        <p className="py-4 text-base font-bold lg:text-lg">
           Serving the Niagara Region for all your construction and renovation
-          needs.{" "}
+          needs.
         </p>
       )}
     </div>

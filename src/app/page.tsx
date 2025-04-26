@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { services } from "./types";
 import ServiceCard from "./components/ServiceCard";
@@ -52,9 +53,12 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <button className="w-[60%] md:w-[30%] mt-8 px-4 py-2 bg-[var(--red)] text-white text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]">
-            <p>FREE QUOTE!</p>
-          </button>
+          <Link
+            href="/contact"
+            className="w-[60%] md:w-[30%] lg:w-[20%] mt-8 px-4 py-2 bg-[var(--red)] text-white text-center text-xl rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
+          >
+            FREE QUOTE!
+          </Link>
         </article>
         <Image
           src="/hero-image.png"
