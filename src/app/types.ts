@@ -32,9 +32,9 @@ export const services: Service[] = [
     mainImage: "/kitchens/kitchen2-after.png",
     imageAlt: "kitchens",
     briefDescription:
-      "Upgrade your kitchen into a space that’s both beautiful and practical. Discover fresh designs and smart features made for modern living.",
+      "Upgrade your kitchen into a space that's both beautiful and practical. Discover fresh designs and smart features made for modern living.",
     description:
-      "We create stunning, functional kitchens tailored to your lifestyle. Whether you're dreaming of a modern chef’s paradise or a cozy family hub, our team delivers custom layouts, premium finishes, and flawless craftsmanship. From concept to completion, we make your kitchen the true heart of your home.",
+      "We create stunning, functional kitchens tailored to your lifestyle. Whether you're dreaming of a modern chef's paradise or a cozy family hub, our team delivers custom layouts, premium finishes, and flawless craftsmanship. From concept to completion, we make your kitchen the true heart of your home.",
     imagePairs: [
       ["/kitchens/kitchen1-after.png", "/kitchens/kitchen1-before.png"],
       ["/kitchens/kitchen2-after.png", "/kitchens/kitchen2-before.png"],
@@ -67,7 +67,7 @@ export const services: Service[] = [
     mainImage: "/basements/basement2.png",
     imageAlt: "basements",
     briefDescription:
-      "From family rooms to personal gyms, turn your basement into the extra space you’ve always wanted.",
+      "From family rooms to personal gyms, turn your basement into the extra space you've always wanted.",
     description:
       "Unlock the full potential of your home with a beautifully finished basement. Whether you're creating a cozy family room, home office, gym, or income suite, we deliver smart designs and quality construction tailored to your goals. From framing to final touches, our team ensures your basement is functional, stylish, and built to last.",
     imagePairs: [
