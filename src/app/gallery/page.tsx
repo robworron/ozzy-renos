@@ -11,7 +11,7 @@ const Gallery = () => {
         <article className="w-full max-w-[1200px] text-3xl md:text-4xl lg:text-6xl">
           <h1>Gallery</h1>
           <p className="my-4 text-sm md:my-8 md:text-base lg:text-xl">
-            Explore our collection of stunning projects that showcase the
+            {`Explore our collection of stunning projects that showcase the
             craftsmanship, creativity, and attention to detail we bring to every
             renovation. From kitchen and bathroom transformations to custom
             decks, fences, and more, each project highlights our commitment to
@@ -20,7 +20,7 @@ const Gallery = () => {
             your own home renovation. Whether you&apos;re looking to refresh a
             single room or undertake a full remodel, our gallery offers a
             glimpse into the possibilities we can create together. Let your
-            dream project start here!
+            dream project start here!`}
           </p>
         </article>
       </section>
