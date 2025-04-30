@@ -26,7 +26,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
         <SwiperSlide key={index}>
           <Image
             src={image}
-            alt={`Image ${index + 1}`}
+            alt={`Ozzy Renos Image ${index + 1}`}
             width={10000}
             height={10000}
             className="object-cover w-full h-full shadow-2xl"

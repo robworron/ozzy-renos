@@ -39,7 +39,7 @@ const Header = () => {
           </button>
           <Image
             src="/logo.png"
-            alt="OzzyRenos"
+            alt="OzzyRenos Logo"
             width={2000}
             height={2000}
             className="w-[160px] h-[70px] mx-6"
