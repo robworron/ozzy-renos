@@ -10,6 +10,7 @@ const Gallery = () => {
       <section className="flex flex-col items-center w-full p-6 lg:p-10 mt-10 bg-[var(--black)] text-white shadow-2xl">
         <article className="w-full max-w-[1200px] text-3xl md:text-4xl lg:text-6xl">
           <h1>Gallery</h1>
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
           <p className="my-4 text-sm md:my-8 md:text-base lg:text-xl">
             Explore our collection of stunning projects that showcase the
             craftsmanship, creativity, and attention to detail we bring to every
