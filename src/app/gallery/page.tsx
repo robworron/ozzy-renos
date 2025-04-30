@@ -17,10 +17,10 @@ const Gallery = () => {
             decks, fences, and more, each project highlights our commitment to
             quality and client satisfaction. Browse through before-and-after
             images to see how we turn visions into reality, and get inspired for
-            your own home renovation. Whether you're looking to refresh a single
-            room or undertake a full remodel, our gallery offers a glimpse into
-            the possibilities we can create together. Let your dream project
-            start here!
+            your own home renovation. Whether you&apos;re looking to refresh a
+            single room or undertake a full remodel, our gallery offers a
+            glimpse into the possibilities we can create together. Let your
+            dream project start here!
           </p>
         </article>
       </section>

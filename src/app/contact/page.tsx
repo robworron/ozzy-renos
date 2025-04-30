@@ -11,13 +11,13 @@ const Contact = () => {
         <article className="w-full max-w-[1200px] text-3xl md:text-4xl lg:text-6xl">
           <h2>Reach Out to Us!</h2>
           <p className="my-8 text-sm md:text-base lg:text-xl">
-            Ready to start your renovation journey? We're here to help bring
-            your vision to life. Whether you have questions, need a quote, or
-            want to discuss your ideas, our team is just a message away. Reach
-            out to us by phone, email, or simply fill out the contact form below
-            — whatever's most convenient for you. We're happy to chat, offer
-            guidance, and schedule a consultation to get things rolling. Let's
-            build something great together.
+            Ready to start your renovation journey? We&apos;re here to help
+            bring your vision to life. Whether you have questions, need a quote,
+            or want to discuss your ideas, our team is just a message away.
+            Reach out to us by phone, email, or simply fill out the contact form
+            below — whatever&apos;s most convenient for you. We&apos;re happy to
+            chat, offer guidance, and schedule a consultation to get things
+            rolling. Let&apos;s build something great together.
           </p>
         </article>
       </section>
