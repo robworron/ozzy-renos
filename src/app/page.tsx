@@ -69,7 +69,7 @@ export default function Home() {
           priority
         />
       </section>
-      <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-white/100 to-white/0" />
+      <div className="absolute inset-0 z-[-1] min-h-[1000px] bg-gradient-to-r from-white/100 to-white/0" />
 
       {/** ABOUT US */}
       <section className="flex flex-col items-center justify-between w-full my-20 md:my-32 md:flex-row-reverse">
