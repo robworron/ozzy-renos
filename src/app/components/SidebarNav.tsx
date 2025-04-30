@@ -25,6 +25,8 @@ const SidebarNav = ({ toggleSidebar }: SidebarNavProps) => {
             currentPath === page.path ? "font-semibold" : ""
           }`}
           onClick={toggleSidebar}
+          aria-label={`Navigate to ${page.title}`}
+          aria-current={currentPath === page.path ? "page" : undefined}
         >
           <h2 className="m-4 text-2xl">{page.title}</h2>
           {page.svg}

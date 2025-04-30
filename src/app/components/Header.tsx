@@ -42,7 +42,7 @@ const Header = () => {
             alt="OzzyRenos Logo"
             width={2000}
             height={2000}
-            className="w-[160px] h-[70px] mx-6"
+            className="w-[167px] h-[70px] mx-6"
           />
           <HeaderNav />
           <div>

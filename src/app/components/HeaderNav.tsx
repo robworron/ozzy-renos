@@ -20,6 +20,7 @@ const HeaderNav = () => {
           className={`relative group text-[var(--red)] text-xl px-0 py-2 mx-2 transition-colors duration-300 ${
             currentPath === page.path ? "font-semibold" : ""
           }`}
+          aria-label={`Navigate to ${page.title}`}
           aria-current={currentPath === page.path ? "page" : undefined}
         >
           <h2>{page.title}</h2>
