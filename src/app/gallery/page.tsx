@@ -10,7 +10,6 @@ const Gallery = () => {
       <section className="flex flex-col items-center w-full p-6 lg:p-10 mt-10 bg-[var(--black)] text-white shadow-2xl">
         <article className="w-full max-w-[1200px] text-3xl md:text-4xl lg:text-6xl">
           <h1>Gallery</h1>
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
           <p className="my-4 text-sm md:my-8 md:text-base lg:text-xl">
             Explore our collection of stunning projects that showcase the
             craftsmanship, creativity, and attention to detail we bring to every
@@ -18,10 +17,10 @@ const Gallery = () => {
             decks, fences, and more, each project highlights our commitment to
             quality and client satisfaction. Browse through before-and-after
             images to see how we turn visions into reality, and get inspired for
-            your own home renovation. Whether you're looking to refresh a single
-            room or undertake a full remodel, our gallery offers a glimpse into
-            the possibilities we can create together. Let your dream project
-            start here!
+            your own home renovation. Whether you&apos;re looking to refresh a
+            single room or undertake a full remodel, our gallery offers a
+            glimpse into the possibilities we can create together. Let your
+            dream project start here!
           </p>
         </article>
       </section>
