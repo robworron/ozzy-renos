@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ozzyrenos.ca
+
+# Sitemaps
+Sitemap: https://www.ozzyrenos.ca/sitemap.xml

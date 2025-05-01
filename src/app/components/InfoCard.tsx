@@ -18,9 +18,9 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
       {footer ? (
         <h2 className="text-xl">Ozzy Renos</h2>
       ) : (
-        <h1 className="mb-4 text-xl text-black md:text-3xl lg:text-5xl">
+        <h2 className="mb-4 text-xl text-black md:text-3xl lg:text-5xl">
           Ozzy Renos
-        </h1>
+        </h2>
       )}
       <div className={infoLineStyles}>
         <svg
