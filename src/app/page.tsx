@@ -5,13 +5,13 @@ import { services } from "./types";
 import ServiceCard from "./components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "Ozzy Renos - Niagara Home Renovations | Kitchens, Basements, Decks",
+  title: "Niagara Home Renovations | Kitchens, Basements, Decks",
   description:
     "Ozzy Renos is a general contractor specializing in renovations and construction in the Niagara Region.",
   openGraph: {
-    title: "Ozzy Renos - Home Renovations in Niagara",
+    title: "Niagara Home Renovations",
     description:
-      "Ozzy Renos offering services in the Niagara Region. Niagara Falls, St. Catharines, Welland, and more.",
+      "Ozzy Renos offers services in the Niagara Region: Niagara Falls, St. Catharines, Welland, and more.",
     url: "https://www.ozzyrenos.ca",
     type: "website",
     images: [
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ozzy Renos - Home Renovations in Niagara",
+    title: "Niagara Home Renovations",
     description:
-      "Ozzy Renos offering services in the Niagara Region. Niagara Falls, St. Catharines, Welland, and more.",
+      "Ozzy Renos offers services in the Niagara Region: Niagara Falls, St. Catharines, Welland, and more.",
     images: ["/niagara-kitchen-renovations.png"],
   },
   alternates: {

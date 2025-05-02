@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { services } from "../types";
 
 export const metadata: Metadata = {
-  title: "Services | Ozzy Renos | Kitchens, Basements, Decks & More",
+  title: "Services | Kitchens, Basements, Decks & More",
   description:
     "Ozzy Renos Services - See our renovation services in the Niagara Region. Kitchens, bathrooms, basements, and more.",
   openGraph: {

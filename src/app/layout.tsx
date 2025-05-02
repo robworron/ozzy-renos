@@ -18,8 +18,40 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "OzzyRenos",
-  description: "Proudly Serving the Niagara Region",
+  title: {
+    default: "Ozzy Renos",
+    template: "%s | Ozzy Renos",
+  },
+  description:
+    "Ozzy Renos is a trusted renovation and construction company serving the Niagara Region with quality craftsmanship and personalized service.",
+  metadataBase: new URL("https://www.ozzyrenos.ca"),
+  openGraph: {
+    title: "Ozzy Renos",
+    description:
+      "Home renovations and general contracting in Niagara: Kitchens, Basements, Decks, and more.",
+    url: "https://www.ozzyrenos.ca",
+    siteName: "Ozzy Renos",
+    type: "website",
+    locale: "en_CA",
+    images: [
+      {
+        url: "/niagara-kitchen-renovations.png",
+        width: 1170,
+        height: 615,
+        alt: "Niagara kitchen renovation by Ozzy Renos",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ozzy Renos",
+    description:
+      "Renovations and contracting services across the Niagara Region. Kitchens, Decks, Basements, and more.",
+    images: ["/niagara-kitchen-renovations.png"],
+  },
+  alternates: {
+    canonical: "https://www.ozzyrenos.ca",
+  },
 };
 
 export default function RootLayout({

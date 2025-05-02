@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 import InfoCard from "../components/InfoCard";
 
 export const metadata: Metadata = {
-  title: "Contact | Ozzy Renos Niagara | Home Renovations in Niagara Region",
+  title: "Contact | Home Renovations in Niagara Region",
   description:
     "Contact Ozzy Renos for your renovation needs in the Niagara Region.",
   openGraph: {
