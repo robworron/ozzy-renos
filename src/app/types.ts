@@ -53,6 +53,8 @@ export const services: Service[] = [
     imagePairs: [
       ["/bathrooms/bathroom1-after.png", "/bathrooms/bathroom1-before.png"],
       ["/bathrooms/bathroom2-after.png", "/bathrooms/bathroom2-before.png"],
+      ["/bathrooms/bathroom9-after.jpg", "/bathrooms/bathroom9-before.jpg"],
+      ["/bathrooms/bathroom10-after.jpg", "/bathrooms/bathroom10-before.jpg"],
     ],
     images: [
       "/bathrooms/bathroom3.png",
@@ -60,6 +62,9 @@ export const services: Service[] = [
       "/bathrooms/bathroom5.png",
       "/bathrooms/bathroom7.png",
       "/bathrooms/bathroom8.png",
+      "/bathrooms/bathroom11.jpg",
+      "/bathrooms/bathroom12.jpg",
+      "/bathrooms/bathroom13.jpg",
     ],
   },
   {
@@ -73,7 +78,12 @@ export const services: Service[] = [
     imagePairs: [
       ["/basements/basement1-after.png", "/basements/basement1-before.png"],
     ],
-    images: ["/basements/basement2.png"],
+    images: [
+      "/basements/basement2.png",
+      "/basements/basement3.jpg",
+      "/basements/basement4.jpg",
+      "/basements/basement5.jpg",
+    ],
   },
   {
     name: "Flooring",
@@ -83,11 +93,20 @@ export const services: Service[] = [
       "Bring your home to life with flooring and trim that reflect your style and create a seamless flow from room to room—adding warmth, character, and cohesion to your space.",
     description:
       "Upgrade your space with expertly installed flooring that combines style, durability, and comfort. Whether you prefer hardwood, vinyl, laminate, or tile, we offer a wide range of high-quality options to suit your taste and needs. Our professional team ensures precise installation and a seamless finish that transforms any room from the ground up.",
+    imagePairs: [
+      ["/flooring/flooring5-after.jpg", "/flooring/flooring5-before.jpg"],
+      ["/flooring/flooring6-after.jpg", "/flooring/flooring6-before.jpg"],
+    ],
     images: [
       "/flooring/flooring1.png",
       "/flooring/flooring2.png",
       "/flooring/flooring3.png",
       "/flooring/flooring4.png",
+      "/flooring/flooring7.jpg",
+      "/flooring/flooring8.jpg",
+      "/flooring/flooring8.jpg",
+      "/flooring/flooring10.jpg",
+      "/flooring/flooring11.jpg",
     ],
   },
   {
