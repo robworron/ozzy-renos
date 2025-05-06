@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat, Roboto } from "next/font/google";
-import Head from "next/head";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -62,12 +61,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="AsNkrYH6yfdrpUn16jJRu2H9yEoN1l-Tz5GmqdLpgtk"
-        />
-      </Head>
       <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
         <Header />
         {children}
