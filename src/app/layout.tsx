@@ -4,6 +4,7 @@ import { Montserrat, Roboto } from "next/font/google";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import OzzyRenosData from "./components/OzzyRenosData";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -64,6 +65,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <OzzyRenosData />
+      </head>
       <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
         <Header />
         {children}

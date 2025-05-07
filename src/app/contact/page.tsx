@@ -6,6 +6,18 @@ export const metadata: Metadata = {
   title: "Contact | Home Renovations in Niagara Region",
   description:
     "Contact Ozzy Renos for your renovation needs in the Niagara Region.",
+  keywords: [
+    "home renovations Niagara",
+    "home renovations Niagara Falls",
+    "home renovations St. Catharines",
+    "home renovations Welland",
+    "Niagara home renovation services",
+    "Niagara Falls home renovation services contact",
+    "Niagara home improvement contact",
+    "decks and fencing contact St. Catharines",
+    "Welland contact for home renovations",
+    "basement finishing contact Niagara",
+  ],
   openGraph: {
     title: "Contact Ozzy Renos | Home Renovations in Niagara",
     description:

@@ -69,7 +69,7 @@ export const services: Service[] = [
   },
   {
     name: "Basements",
-    mainImage: "/basements/basement2.png",
+    mainImage: "/basements/basement4.jpg",
     imageAlt: "basements",
     briefDescription:
       "From family rooms to personal gyms, turn your basement into the extra space you've always wanted.",
@@ -98,13 +98,13 @@ export const services: Service[] = [
       ["/flooring/flooring6-after.jpg", "/flooring/flooring6-before.jpg"],
     ],
     images: [
+      "/flooring/flooring7.jpg",
       "/flooring/flooring1.png",
       "/flooring/flooring2.png",
       "/flooring/flooring3.png",
       "/flooring/flooring4.png",
-      "/flooring/flooring7.jpg",
       "/flooring/flooring8.jpg",
-      "/flooring/flooring8.jpg",
+      "/flooring/flooring9.jpg",
       "/flooring/flooring10.jpg",
       "/flooring/flooring11.jpg",
     ],

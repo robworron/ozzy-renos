@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: "Services | Kitchens, Basements, Decks & More",
   description:
     "Ozzy Renos Services - See our renovation services in the Niagara Region. Kitchens, bathrooms, basements, and more.",
+  keywords: [
+    "home renovations Niagara",
+    "home renovations Niagara Falls",
+    "home renovations St. Catharines",
+    "home renovations Welland",
+    "Niagara kitchen improvement services",
+    "bathrooms Grimsby",
+    "Niagara Falls basement renovations",
+    "St. Catharines decks and fencing",
+    "Welland staircase builder",
+    "basement finishing Niagara",
+    "kitchen remodel Niagara",
+    "affordable home renovations Niagara Falls",
+    "Niagara home upgrades",
+  ],
   openGraph: {
     title: "Services | Ozzy Renos - Home Renovations in Niagara",
     description:
