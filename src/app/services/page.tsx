@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: ["/niagara-kitchen-renovations.png"],
   },
   alternates: {
-    canonical: "https://www.ozzyrenos.ca/services",
+    canonical: "/services",
   },
 };
 
