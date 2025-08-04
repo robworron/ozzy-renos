@@ -11,17 +11,10 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
     <div
       className={
         footer
-          ? "flex flex-col gap-2 mx-auto md:mx-0 text-sm"
-          : "flex flex-col justify-between w-[90%] h-[350px] p-4 text-base md:text-lg text-black"
+          ? "flex flex-col w-full max-w-[700px] justify-around md:flex-row gap-2 mx-auto md:mx-0 text-sm"
+          : "flex flex-col justify-between w-[90%] h-[350px] text-base md:text-lg text-black"
       }
     >
-      {footer ? (
-        <h2 className="text-xl">Ozzy Renos</h2>
-      ) : (
-        <h2 className="mb-4 text-xl text-black md:text-3xl lg:text-5xl">
-          Ozzy Renos
-        </h2>
-      )}
       <div className={infoLineStyles}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -37,11 +30,15 @@ const InfoCard = ({ footer = false }: InfoCardProps) => {
             d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
           />
         </svg>
-        <div className={footer ? "flex" : "flex flex-col p-1"}>
+        <div className={footer ? "flex flex-col" : "flex flex-col p-1"}>
           <p>
-            <b>Monday - Sunday</b>
+            <b>Monday - Friday</b>
           </p>
-          <p className={footer ? "pl-2" : ""}>9:00am - 6:00pm</p>
+          <p className={footer ? "pl-2" : ""}>7:00am - 7:00pm</p>
+          <p className={footer ? "mt-2" : ""}>
+            <b>Saturday</b>
+          </p>
+          <p className={footer ? "pl-2" : ""}>9:00am - 3:00pm</p>
         </div>
       </div>
       <div className={infoLineStyles}>

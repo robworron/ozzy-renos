@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { services } from "./types";
 import ServiceCard from "./components/ServiceCard";
+import GoogleReviews from "./components/GoogleReviews";
 
 export const metadata: Metadata = {
   title: "Ozzy Renos | Niagara Home Renovations",
@@ -89,9 +90,11 @@ export default function Home() {
     <main className="flex flex-col justify-start min-h-[100vh]">
       <section className="relative flex justify-center w-full h-[80vh]">
         <article className="flex flex-col justify-center w-full max-w-[1200px] ml-4">
-          <h1 className="my-2 text-4xl lg:text-7xl">Ozzy Renos</h1>
-          <h2 className="my-4 text-xl lg:text-3xl">
-            Proudly Serving the Niagara Region
+          <h1 className="my-2 text-4xl lg:text-7xl">Ozzy Renovation</h1>
+          <h2 className="my-4 text-lg lg:text-2xl">
+            General contractor and renovator proudly serving homeowners across
+            the entire Niagara Region - including Niagara Falls, St. Catharines,
+            Welland, Grimsby, and surrounding communities.
           </h2>
           <ul className="flex flex-col ml-4 text-lg lg:text-2xl">
             {servicesList.map((service) => (
@@ -120,8 +123,11 @@ export default function Home() {
       </section>
       <div className="absolute inset-0 z-[-1] min-h-[1000px] bg-gradient-to-r from-white/100 to-white/0" />
 
+      {/** GOOGLE REVIEWS */}
+      <GoogleReviews />
+
       {/** ABOUT US */}
-      <section className="flex flex-col items-center justify-between w-full my-20 md:my-32 md:flex-row-reverse">
+      <section className="flex flex-col items-center justify-between w-full mb-20 md:mb-32 md:flex-row-reverse">
         <article className="flex flex-col justify-center w-full md:w-[45%] h-[350px] p-10 bg-[var(--red)] text-sm lg:text-lg text-white shadow-2xl">
           <h2 className="pb-8 text-2xl lg:text-3xl">About Us</h2>
           <p>
@@ -130,8 +136,8 @@ export default function Home() {
             commitment to excellence, we take pride in our journey as a premier
             general contractor. Our team is dedicated to delivering the highest
             quality craftsmanship, ensuring every project is a testament to our
-            passion for building and renovating spaces that stand the test of
-            time.
+            passion for building and renovating kitchens, bathrooms, basements,
+            and more that stand the test of time.
           </p>
         </article>
         <Image
