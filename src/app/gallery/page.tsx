@@ -9,17 +9,6 @@ export const metadata: Metadata = {
   title: "Gallery | Kitchens, Bathrooms, Decks",
   description:
     "Ozzy Renos Gallery - Explore our stunning renovation projects in the Niagara Region.",
-  keywords: [
-    "home renovations Niagara",
-    "home renovations Niagara Falls",
-    "home renovations St. Catharines",
-    "home renovations Welland",
-    "Niagara kitchen renovation images",
-    "Gallery of Niagara home renovations",
-    "Niagara Falls home renovation photos",
-    "St. Catharines decks and fencing images",
-    "Welland staircase builder photos",
-  ],
   openGraph: {
     title: "Gallery | Ozzy Renos - Home Renovations in Niagara",
     description:

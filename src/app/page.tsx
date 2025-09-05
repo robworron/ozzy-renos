@@ -9,23 +9,6 @@ export const metadata: Metadata = {
   title: "Ozzy Renos | Niagara Home Renovations",
   description:
     "General contractor specializing in affordable home renovations across the Niagara Region, including kitchens, bathrooms, basements, flooring, decks, and more.",
-  keywords: [
-    "home renovations Niagara",
-    "home renovations Niagara Falls",
-    "home renovations St. Catharines",
-    "home renovations Welland",
-    "Niagara home improvement services",
-    "general contractor Grimsby",
-    "Niagara Falls home renovations",
-    "St. Catharines renovations contractor",
-    "Welland deck builder",
-    "basement finishing Niagara",
-    "kitchen remodel Niagara",
-    "affordable home renovations Niagara",
-    "Niagara home upgrades",
-    "trusted Niagara renovation company",
-    "fence installation Niagara",
-  ],
   openGraph: {
     title: "Niagara Home Renovations",
     description:
