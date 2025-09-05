@@ -1,6 +1,3 @@
-import { ReactNode } from "react";
-import { Icons } from "./icons";
-
 export type ImagePair = [string, string];
 
 export type Page = {

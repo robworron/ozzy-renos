@@ -45,8 +45,9 @@ export default function Decks() {
         </article>
       </section>
       <section className="flex flex-wrap justify-around items-center gap-4 w-[90%]">
-        {services[4].imagePairs?.map((pair, index) => (
+        {services[4].imagePairs?.map((pair) => (
           <Image
+            key={pair[0]}
             src={pair[0]}
             alt={services[4].imageAlt}
             width={1200}
@@ -54,8 +55,9 @@ export default function Decks() {
             className="w-[400px] h-auto shadow-2xl"
           />
         ))}
-        {services[4].images?.map((url, index) => (
+        {services[4].images?.map((url) => (
           <Image
+            key={url}
             src={url}
             alt={services[4].imageAlt}
             width={4000}

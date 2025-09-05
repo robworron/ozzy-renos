@@ -45,8 +45,9 @@ export default function Basements() {
         </article>
       </section>
       <section className="flex flex-wrap justify-around items-center gap-4 w-[90%]">
-        {services[2].imagePairs?.map((pair, index) => (
+        {services[2].imagePairs?.map((pair) => (
           <Image
+            key={pair[0]}
             src={pair[0]}
             alt={services[2].imageAlt}
             width={1200}
@@ -54,8 +55,9 @@ export default function Basements() {
             className="w-[400px] h-auto shadow-2xl"
           />
         ))}
-        {services[2].images?.map((url, index) => (
+        {services[2].images?.map((url) => (
           <Image
+            key={url}
             src={url}
             alt={services[2].imageAlt}
             width={4000}

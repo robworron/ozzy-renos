@@ -45,8 +45,9 @@ export default function Kitchens() {
         </article>
       </section>
       <section className="flex flex-wrap justify-around items-center gap-4 w-[90%]">
-        {services[0].imagePairs?.map((pair, index) => (
+        {services[0].imagePairs?.map((pair) => (
           <Image
+            key={pair[0]}
             src={pair[0]}
             alt={services[0].imageAlt}
             width={1200}
@@ -54,8 +55,9 @@ export default function Kitchens() {
             className="w-[400px] h-auto shadow-2xl"
           />
         ))}
-        {services[0].images?.map((url, index) => (
+        {services[0].images?.map((url) => (
           <Image
+            key={url}
             src={url}
             alt={services[0].imageAlt}
             width={4000}

@@ -45,8 +45,9 @@ export default function Flooring() {
         </article>
       </section>
       <section className="flex flex-wrap justify-around items-center gap-4 w-[90%]">
-        {services[3].imagePairs?.map((pair, index) => (
+        {services[3].imagePairs?.map((pair) => (
           <Image
+            key={pair[0]}
             src={pair[0]}
             alt={services[3].imageAlt}
             width={1200}
@@ -54,8 +55,9 @@ export default function Flooring() {
             className="w-[400px] h-auto shadow-2xl"
           />
         ))}
-        {services[3].images?.map((url, index) => (
+        {services[3].images?.map((url) => (
           <Image
+            key={url}
             src={url}
             alt={services[3].imageAlt}
             width={4000}
