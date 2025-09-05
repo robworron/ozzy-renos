@@ -5,15 +5,14 @@ export type ImagePair = [string, string];
 
 export type Page = {
   title: string;
-  path: string;
-  svg: ReactNode;
+  path?: string;
 };
 
 export const pages: Page[] = [
-  { title: "Home", path: "/", svg: Icons.HomeIcon },
-  { title: "Services", path: "/services", svg: Icons.ServicesIcon },
-  { title: "Gallery", path: "/gallery", svg: Icons.GalleryIcon },
-  { title: "Contact", path: "/contact", svg: Icons.MailIcon },
+  { title: "Home", path: "/" },
+  { title: "Services" },
+  { title: "Gallery", path: "/gallery" },
+  { title: "Contact", path: "/contact" },
 ];
 
 export type Service = {
