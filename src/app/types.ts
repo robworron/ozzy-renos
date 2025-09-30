@@ -18,6 +18,7 @@ export type Service = {
   imageAlt: string;
   briefDescription: string;
   description: string;
+  pageUrl: string;
   imagePairs?: ImagePair[];
   images?: string[];
 };
@@ -31,6 +32,7 @@ export const services: Service[] = [
       "Upgrade your kitchen into a space that's both beautiful and practical. Discover fresh designs and smart features made for modern living.",
     description:
       "We create stunning, functional kitchens tailored to your lifestyle. Whether you're dreaming of a modern chef's paradise or a cozy family hub, our team delivers custom layouts, premium finishes, and flawless craftsmanship. From concept to completion, we make your kitchen the true heart of your home.",
+    pageUrl: "/kitchens",
     imagePairs: [
       ["/kitchens/kitchen1-after.png", "/kitchens/kitchen1-before.png"],
       ["/kitchens/kitchen2-after.png", "/kitchens/kitchen2-before.png"],
@@ -46,6 +48,7 @@ export const services: Service[] = [
       "Refresh your bathroom with custom renovations that bring comfort, style, and a touch of luxury to your everyday routine.",
     description:
       "We specialize in transforming bathrooms into relaxing, functional retreats. Whether it's a sleek ensuite, a spa-inspired upgrade, or a full remodel, our team delivers thoughtful design, quality materials, and expert craftsmanship. Let us bring your vision to life—style, comfort, and durability in every detail.",
+    pageUrl: "/bathrooms",
     imagePairs: [
       ["/bathrooms/bathroom1-after.png", "/bathrooms/bathroom1-before.png"],
       ["/bathrooms/bathroom2-after.png", "/bathrooms/bathroom2-before.png"],
@@ -71,6 +74,7 @@ export const services: Service[] = [
       "From family rooms to personal gyms, turn your basement into the extra space you've always wanted.",
     description:
       "Unlock the full potential of your home with a beautifully finished basement. Whether you're creating a cozy family room, home office, gym, or income suite, we deliver smart designs and quality construction tailored to your goals. From framing to final touches, our team ensures your basement is functional, stylish, and built to last.",
+    pageUrl: "/basements",
     imagePairs: [
       ["/basements/basement1-after.png", "/basements/basement1-before.png"],
     ],
@@ -89,6 +93,7 @@ export const services: Service[] = [
       "Bring your home to life with flooring and trim that reflect your style and create a seamless flow from room to room—adding warmth, character, and cohesion to your space.",
     description:
       "Upgrade your space with expertly installed flooring that combines style, durability, and comfort. Whether you prefer hardwood, vinyl, laminate, or tile, we offer a wide range of high-quality options to suit your taste and needs. Our professional team ensures precise installation and a seamless finish that transforms any room from the ground up.",
+    pageUrl: "/flooring",
     imagePairs: [
       ["/flooring/flooring5-after.jpg", "/flooring/flooring5-before.jpg"],
       ["/flooring/flooring6-after.jpg", "/flooring/flooring6-before.jpg"],
@@ -113,6 +118,7 @@ export const services: Service[] = [
       "Enjoy the outdoors in comfort and style with a custom-built deck designed to suit your home, your lifestyle, and the way you love to unwind or entertain.",
     description:
       "Enhance your outdoor living with custom-built decks and fences that offer both beauty and durability. Whether you're creating a space to entertain or looking for added privacy and security, our team delivers expert craftsmanship and quality materials tailored to your style and needs. Built tough, built right—every time.",
+    pageUrl: "/decks",
     images: ["/decks/deck1.png", "/decks/deck2.png", "/decks/deck3.png"],
   },
 ];

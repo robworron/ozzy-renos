@@ -140,6 +140,7 @@ export default function Home() {
               key={index}
               cardTitle={service.name}
               serviceCardDescription={service.briefDescription}
+              url={service.pageUrl}
               imagePath={service.mainImage}
               imageAlt={service.imageAlt}
             />

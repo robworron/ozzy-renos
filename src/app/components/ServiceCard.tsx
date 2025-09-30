@@ -4,6 +4,7 @@ import Link from "next/link";
 type ServiceCardProps = {
   cardTitle: string;
   serviceCardDescription: string;
+  url: string;
   imagePath: string;
   imageAlt?: string;
 };
@@ -11,6 +12,7 @@ type ServiceCardProps = {
 const ServiceCard = ({
   cardTitle,
   serviceCardDescription,
+  url,
   imagePath,
   imageAlt,
 }: ServiceCardProps) => {
@@ -32,7 +34,7 @@ const ServiceCard = ({
       <div className="hidden relative z-[2] content-center items-center w-[90%] mt-4 text-lg text-center group-hover:block">
         <Link
           key={imageAlt}
-          href={`/services/#${imageAlt}`}
+          href={url}
           aria-label={`See our ${cardTitle} Service Section`}
           className="px-4 py-2 bg-[var(--red)] text-white text-sm lg:text-base rounded shadow-xl transitions-colors duration-300 ease-in-out hover:bg-[var(--black)]"
         >
