@@ -54,6 +54,9 @@ export const services: Service[] = [
       ["/bathrooms/bathroom2-after.png", "/bathrooms/bathroom2-before.png"],
       ["/bathrooms/bathroom9-after.jpg", "/bathrooms/bathroom9-before.jpg"],
       ["/bathrooms/bathroom10-after.jpg", "/bathrooms/bathroom10-before.jpg"],
+      ["/bathrooms/bathroom19-after.jpg", "/bathrooms/bathroom19-before.jpg"],
+      ["/bathrooms/bathroom20-after1.jpg", "/bathrooms/bathroom20-before.jpg"],
+      ["/bathrooms/bathroom21-after1.jpg", "/bathrooms/bathroom21-before.jpg"],
     ],
     images: [
       "/bathrooms/bathroom3.png",
@@ -64,6 +67,13 @@ export const services: Service[] = [
       "/bathrooms/bathroom11.jpg",
       "/bathrooms/bathroom12.jpg",
       "/bathrooms/bathroom13.jpg",
+      "/bathrooms/bathroom14.jpg",
+      "/bathrooms/bathroom15.jpg",
+      "/bathrooms/bathroom16.jpg",
+      "/bathrooms/bathroom17.jpg",
+      "/bathrooms/bathroom18.jpg",
+      "/bathrooms/bathroom22.jpg",
+      "/bathrooms/bathroom23.jpg",
     ],
   },
   {
